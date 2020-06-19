@@ -1,0 +1,171 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+.header-font{
+  margin-left: 20px;
+  color: #000000;
+  font-family: 'Bebas Neue';
+  margin-top: 20px;
+}
+
+.content{ 
+  margin-left: 300px;
+  height: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  overflow: auto;
+  text-align: center;
+  background-color: #A30B0B;
+  font-weight: bold;
+  color: aliceblue;
+  
+}
+
+.row{
+  padding-top: 3%;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 300px; 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.experience-pictures{
+  padding: 2%;
+  width: 200px;
+  height: 200px;
+}
+
+.profile-photo{
+  width: 50%;
+  border-radius: 50%;
+  margin-top: 10%;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+}
+
+
+.sections{
+  height: 100%;
+  padding-bottom: 7%;
+}
+
+
+.sidebuttons {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+
+#testimonials{
+  text-align: center;
+  height: 430px;
+  width: 450px;
+}
+
+.date{
+  float: right;
+}
+
+.tools-img{
+  width: 40px;
+}
+
+.eje {
+  color: #000000;
+  text-decoration: none;
+}
+
+.eje:hover 
+{
+   color:#00A0C6; 
+   text-decoration:none; 
+   cursor:pointer;  
+}
+
+.card-titles{
+  color: #080808;
+  text-decoration: none;
+  font-size:25px;
+  font-family: 'Zilla Slab';
+  font-weight: bold;
+}
+
+.card-titles:hover{
+  color: #080808;
+  text-decoration: underline;
+  text-decoration-color: rgb(168, 3, 3);
+}
+
+.titles{
+  font-family: 'IBM Plex Serif';
+  font-weight: bold;
+  
+}
+
+.contact-font{
+  font-family: 'IBM Plex Serif';
+  text-decoration: none;
+  color: #4d4646; 
+}
