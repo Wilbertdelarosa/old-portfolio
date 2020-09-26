@@ -8,18 +8,38 @@ html, body {
   overflow-x: hidden;
 }
 
-
+.row {
+  display: flex;
+}
 
 .header-font{
   margin-left: 20px;
-  color: #000000;
+  color: #ffffff;
   font-family: 'Bebas Neue';
-  margin-top: 20px;
+  
 }
 
-.content{ 
-  margin-left: 300px;
-  height: 100%;
+.header-font-black{
+  margin-left: 20px;
+  color: #000000;
+  font-family: 'Bebas Neue';
+}
+
+.uri{
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+.uni-content{
+  margin: auto;
+}
+.uml{
+  height: 100px;
+  width: 80px; 
+  margin: auto;
+}
+.uni-padding{
+  text-align: center;
 }
 
 .sidebar {
@@ -28,10 +48,11 @@ html, body {
   position: fixed;
   overflow: auto;
   text-align: center;
-  background-color: #A30B0B;
+  background-image: url('f5.jpg');
+  background-position-x: center;
+  background-size: 100% 100%;
   font-weight: bold;
   color: aliceblue;
-  
 }
 
 .row{
@@ -62,8 +83,10 @@ html, body {
 
 .experience-pictures{
   padding: 2%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  
 }
 
 .profile-photo{
@@ -71,13 +94,47 @@ html, body {
   border-radius: 50%;
   margin-top: 10%;
   margin-bottom: 20px;
-  border: 2px solid #ddd;
+  border: 6px solid #ddd;
+}
+
+.tab{
+  display: inline-block;
+    margin-left: 30px;
 }
 
 
+.content{ 
+  margin-left: 300px;
+}
+
 .sections{
   height: 100%;
-  padding-bottom: 7%;
+  padding-bottom: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#section1{
+  padding-top: 2%;
+  background-color: #1980c5;
+}
+#section2{
+  padding-top: 2%;
+  background-color: #f1b900;
+}
+#section3{
+  padding-top: 2%;
+  background-color: #1980c5;
+}
+
+#section4{
+  padding-top: 2%;
+  background-color: #f1b900;
+}
+
+#section5{
+  padding-top: 2%;
+  background-color: #1980c5;
 }
 
 
@@ -87,13 +144,14 @@ html, body {
   padding: 16px;
   font-size: 20px;
   font-weight: bold;
+  text-shadow: 4px 2px 4px #000;
   
 }
 
 
 .sidebar a:hover:not(.active) {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  background-color: #1980c5;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -104,15 +162,39 @@ html, body {
     width: 100%;
     height: auto;
     position: relative;
+    
   }
   .sidebar a {float: left;}
+  .sidebuttons{display: none;}
   div.content {margin-left: 0;}
+  
+
+}
+
+@media screen and (max-width:1000px){
+  .col-sm-12{padding-bottom: 3%;}
+  
+  .col-sm-4{
+    padding-bottom: 3%;
+  }
+
+  .col-md-12{
+    padding-bottom: 3%;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
     float: none;
+  }
+
+  
+}
+
+@media screen and (max-width: 700px) {
+  .titles2{
+    font-size: 13px;
   }
 }
 
@@ -124,8 +206,17 @@ html, body {
   width: 450px;
 }
 
+.programming{
+  margin: auto;
+}
+
 .date{
   float: right;
+}
+
+.date2{
+  display: inline-block;
+    margin-left: 21rem;
 }
 
 .tools-img{
@@ -145,23 +236,27 @@ html, body {
 }
 
 .card-titles{
-  color: #080808;
+  color: #2873c9;
   text-decoration: none;
-  font-size:25px;
+  font-size:17px;
   font-family: 'Zilla Slab';
   font-weight: bold;
 }
 
 .card-titles:hover{
-  color: #080808;
-  text-decoration: underline;
-  text-decoration-color: rgb(168, 3, 3);
+  color: #023269;
+  text-decoration: none;
+  text-decoration-color: rgb(0, 0, 0);
 }
 
 .titles{
   font-family: 'IBM Plex Serif';
   font-weight: bold;
-  
+}
+
+.titles2{
+  font-family: 'IBM Plex Serif';
+  font-weight: bold;
 }
 
 .contact-font{
@@ -169,3 +264,4 @@ html, body {
   text-decoration: none;
   color: #4d4646; 
 }
+
