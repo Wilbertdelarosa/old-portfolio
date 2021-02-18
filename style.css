@@ -30,6 +30,17 @@ html, body {
   width: 100px;
   margin: auto;
 }
+.Homes{
+  height: 110px;
+  width: 120px;
+  margin: auto;
+}
+
+.bar{
+  height: 100px;
+  width: 120px;
+  margin: auto;
+}
 .uni-content{
   margin: auto;
 }
